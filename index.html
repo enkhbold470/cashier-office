@@ -2,57 +2,62 @@
 <html lang="en">
 <head>
   <meta charset="UTF-8">
-  <title>De Anza Spring 2025 | Payment Information</title>
+  <title>De Anza Spring 2025 | Payment Card</title>
   <style>
     @page {
       size: letter portrait;
       margin: 0.5in;
     }
     body {
-      font-family: 'Segoe UI', 'Roboto', sans-serif;
+      font-family: 'Segoe UI', sans-serif;
       background: #fff;
-      color: #1e1e2f;
-      font-size: 13px;
-      line-height: 1.6;
+      color: #000;
+      font-size: 14px;
       margin: 0;
       padding: 0;
+      display: flex;
+      justify-content: center;
+      align-items: center;
+      height: 100vh;
+    }
+    .card {
+      max-width: 850px;
+      border: 2px solid #3b3b98;
+      border-radius: 12px;
+      padding: 1.5rem;
+      box-shadow: 0 2px 8px rgba(0,0,0,0.1);
     }
     h1 {
-      font-size: 24px;
       text-align: center;
-      margin: 1rem auto 1.5rem;
+      font-size: 24px;
+      margin-bottom: 1rem;
       color: #3b3b98;
+    }
+    .columns {
+      display: flex;
+      flex-wrap: wrap;
+      gap: 1.5rem;
+    }
+    .section {
+      flex: 1 1 250px;
     }
     h2 {
       font-size: 16px;
+      margin-bottom: 0.5rem;
       color: #3b3b98;
-      margin-bottom: 0.4em;
     }
-    .grid {
-      display: flex;
-      flex-wrap: wrap;
-      gap: 1rem;
-      padding: 0 1rem;
+    ul {
+      list-style: none;
+      padding: 0;
+      margin: 0;
     }
-    .section {
-      flex: 1 1 calc(50% - 1rem);
-      background: white;
-      border-left: 4px solid #3b3b98;
-      border-radius: 8px;
-      padding: 1rem;
-      box-shadow: 0 2px 4px rgba(0,0,0,0.05);
-      box-sizing: border-box;
-    }
-    .section ul {
-      padding-left: 1.2em;
-      margin: 0.5em 0 0;
-    }
-    .section ul li {
-      margin-bottom: 0.4em;
+    ul li {
+      margin: 0.3em 0;
     }
     .contact {
-      flex: 1 1 100%;
-      font-size: 12px;
+      text-align: center;
+      margin-top: 1rem;
+      font-size: 13px;
     }
     a {
       color: #3b3b98;
@@ -61,97 +66,72 @@
     a:hover {
       text-decoration: underline;
     }
-    @media print {
-      body {
-        font-size: 16px;
-      }
-      .grid {
-        column-count: 2;
-        column-gap: 2rem;
-        padding: 0;
-      }
-      .section {
-        break-inside: avoid;
-        width: 100%;
-        margin-bottom: 1rem;
-        border-left: none;
-        border-top: 2px solid #3b3b98;
-      }
-    }
   </style>
 </head>
 <body>
-  <h1>De Anza College | Spring 2025 Payment Information</h1>
-  <div class="grid">
-
-    <div class="section">
-      <h2>Tuition & Fees</h2>
-      <ul>
-        <li>$31/unit – Enrollment Fee</li>
-        <li>$245/unit – Foreign Tuition</li>
-        <li>$58.75 – Campus Fees (includes Eco Pass, Health Services)</li>
-        <li>$552 – Mandatory Health Insurance (for F-1 students)</li>
-      </ul>
+  <div class="card">
+    <h1>💼 De Anza College – Spring 2025</h1>
+    <div class="columns">
+      <div class="section">
+        <h2>📚 Tuition</h2>
+        <ul>
+          <li>$31/unit</li>
+          <li>$245/unit (F-1)</li>
+          <li>$58.75 fees</li>
+          <li>$552 insurance</li>
+        </ul>
+      </div>
+      <div class="section">
+        <h2>🔒 F-1 Policy</h2>
+        <ul>
+          <li>❌ No drop</li>
+          <li>📆 Pay by Apr 18</li>
+          <li>🚫 Holds after Week 6</li>
+          <li>📂 Use MyPortal</li>
+        </ul>
+      </div>
+      <div class="section">
+        <h2>💳 How to Pay</h2>
+        <ul>
+          <li>🌐 Online (Visa/MC)</li>
+          <li>🌍 Flywire</li>
+          <li>✉️ Check</li>
+          <li>💵 Cash</li>
+        </ul>
+      </div>
+      <div class="section">
+        <h2>📆 Installments</h2>
+        <ul>
+          <li>Join by Apr 18</li>
+          <li>$25 setup fee</li>
+          <li>3x auto charges</li>
+          <li>Auto updates</li>
+        </ul>
+      </div>
+      <div class="section">
+        <h2>💸 Refunds</h2>
+        <ul>
+          <li>2nd Sun deadline</li>
+          <li>Request in portal</li>
+          <li>Credit rolls over</li>
+          <li>$10 fee if late</li>
+        </ul>
+      </div>
+      <div class="section">
+        <h2>🖨️ Invoice</h2>
+        <ul>
+          <li>MyPortal → Ebill</li>
+          <li>Select term</li>
+          <li>🖨️ Print</li>
+        </ul>
+      </div>
     </div>
-
-    <div class="section">
-      <h2>F-1 Visa Student Payment Policy</h2>
-      <ul>
-        <li>No drop for non-payment</li>
-        <li>Full payment due by April 18</li>
-        <li>Account holds placed after Week 6 for unpaid balances</li>
-        <li>Installment plan available via MyPortal</li>
-      </ul>
+    <div class="contact">
+      <h2>📫 Contact</h2>
+      <p>📧 <a href="mailto:deanzacashier@fhda.edu">deanzacashier@fhda.edu</a></p>
+      <p>🌐 <a href="http://www.deanza.edu/cashier">deanza.edu/cashier</a></p>
+      <p>📍 Reg. & Student Services | 🕘 Mon–Thu, 9AM–5PM</p>
     </div>
-
-    <div class="section">
-      <h2>Payment Methods</h2>
-      <ul>
-        <li>Online payment: Visa, MasterCard, Discover</li>
-        <li>Flywire (processing delay: 2 days)</li>
-        <li>Mail-in checks or in-person delivery</li>
-        <li>Cash payments accepted (exact amount recommended)</li>
-      </ul>
-    </div>
-
-    <div class="section">
-      <h2>Installment Payment Plan</h2>
-      <ul>
-        <li>Enroll via MyPortal by April 18</li>
-        <li>One-time $25 setup fee</li>
-        <li>Three automatic credit card charges</li>
-        <li>Adjusts automatically with unit changes</li>
-      </ul>
-    </div>
-
-    <div class="section">
-      <h2>Refund Policy</h2>
-      <ul>
-        <li>Refund deadline: 2nd Sunday of the quarter</li>
-        <li>Drop by deadline to qualify for a refund</li>
-        <li>Request via MyPortal > Bill Payment > Refund Request</li>
-        <li>$10 fee if dropped after term begins</li>
-        <li>Credits carry over to future quarters</li>
-      </ul>
-    </div>
-
-    <div class="section">
-      <h2>Printing Invoices</h2>
-      <ul>
-        <li>Login to MyPortal > Ebill app</li>
-        <li>Select the academic term</li>
-        <li>Click "View Statement" and print</li>
-      </ul>
-    </div>
-
-    <div class="section contact">
-      <h2>Cashier’s Office Contact</h2>
-      <p>Email: <a href="mailto:deanzacashier@fhda.edu">deanzacashier@fhda.edu</a></p>
-      <p>Website: <a href="http://www.deanza.edu/cashier">www.deanza.edu/cashier</a></p>
-      <p>Location: Registration & Student Services Building</p>
-      <p>Hours: Monday–Thursday, 9:00 AM – 5:00 PM</p>
-    </div>
-
   </div>
 </body>
 </html>
